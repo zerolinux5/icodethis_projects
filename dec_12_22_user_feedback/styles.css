@@ -1,0 +1,121 @@
+:root {
+    --border-radius: 0.5rem;
+    --shadow-offset-left: -2rem;
+    --shadow-offset-right: 0.5rem;
+    --primary-color: #FF72A2;
+}
+
+/* Elements */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    min-height: 100vh;
+}
+
+form {
+    min-width: 33%;
+    margin: auto;
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-offset-left) var(--shadow-offset-left) #F4F7FF,
+                var(--shadow-offset-right) var(--shadow-offset-right) 1rem #ECEDFF;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+p {
+    padding-right: 1rem;
+}
+
+textarea {
+    border-radius: var(--border-radius);
+    resize: none;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--primary-color);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+input[type="radio"]:checked + label {
+    border: 1px solid lightgray;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+input[type="submit"], input[type="reset"] {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0.25rem;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: white;
+    color: gray;
+}
+
+i {
+    padding: 1rem 0;
+}
+
+/* Classes */
+
+.checkbox-container {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.form-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.radio-button-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+}
+
+.radio-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.25rem;
+}
+
+.radio-button-container label {
+    width: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}

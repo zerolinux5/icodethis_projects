@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/0d7abdcffb.js" crossorigin="anonymous"></script>
+    <title>User Feedback</title>
+</head>
+<body>
+    <form>
+        <h1>Give feedback</h1>
+        <p>What do you think of the issue search experience within Jira projects?</p>
+        <section class="radio-button-section">
+            <div class="radio-button-container">
+                <input type="radio" name="feedback" value="terrible" id="terrible">
+                <label for="terrible">
+                    <i class="fa-regular fa-face-sad-tear fa-2xl"></i>
+                    Terrible
+                </label>
+            </div>
+            <div class="radio-button-container">
+                <input type="radio" name="feedback" value="bad" id="bad">
+                <label for="bad">
+                    <i class="fa-regular fa-face-frown fa-2xl"></i>
+                    Bad
+                </label>
+            </div>
+            <div class="radio-button-container">
+                <input type="radio" name="feedback" value="okay" id="okay">
+                <label for="okay">
+                    <i class="fa-regular fa-face-meh fa-2xl"></i>
+                    Okay
+                </label>
+            </div>
+            <div class="radio-button-container">
+                <input type="radio" name="feedback" value="good" id="good">
+                <label for="good">
+                    <i class="fa-regular fa-face-smile fa-2xl"></i>
+                    Good
+                </label>
+            </div>
+            <div class="radio-button-container">
+                <input type="radio" name="feedback" value="amazing" id="amazing">
+                <label for="amazing">
+                    <i class="fa-regular fa-face-laugh fa-2xl"></i>
+                    Amazing
+                </label>
+            </div>
+        </section>
+        <label for="comments">What are the main reasons for your rating?</label>
+        <textarea id="comments" name="comments" rows="5"></textarea>
+        <section>
+            <div class="checkbox-container">
+                <input type="checkbox" id="feedback-link" name="feedback-link" checked>
+                <label for="feedback-link">I may be contacted about this feedback. <a href="#">Privacy Policy</a></label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="research-link" name="research-link">
+                <label for="research-link">I'd like to help impove by joining the <a href="#">Research Group</a>.</label>
+            </div>
+        </section>
+        <section class="form-button-container">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+        </section>
+    </form>
+</body>
+</html>
