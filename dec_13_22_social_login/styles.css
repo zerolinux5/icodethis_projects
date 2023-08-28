@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #4665D8;
+    --secondary-color: #F3F9FE;
+    --tertiary-color: #859ae7;
+    --border-radius: 1rem;
+}
+
+/* Elements */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    padding: 2rem 4rem;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    min-width: 50%;
+}
+
+@media (min-width: 1270px) {
+    form {
+        min-width: 80%;
+    }
+}
+
+h1 {
+    margin: 0rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 1rem;
+    width: 70%;
+}
+
+input[type="email"] {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+input[type="email"]::placeholder {
+    color: white;
+}
+
+input[type="email"]:focus {
+    outline: none;
+}
+
+button {
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Classes */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.icon {
+    margin: 0;
+    padding: 0.25rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 5px 1rem gray;
+    height: 50px;
+    width: 50px;
+}
+
+.icon-section {
+    margin: -1.5rem 0rem -2rem 0rem;
+    min-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interactive-components {
+    border: 1px solid var(--secondary-color);
+    background-color: var(--tertiary-color);
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1270px) {
+    .interactive-components {
+        width: 80%;
+    }
+}
+
+.outline {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
