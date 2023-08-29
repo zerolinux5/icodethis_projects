@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #566EDA;
+    --secondary-color: #3F5B9B;
+    --tertiary-color: #9cacd8;
+}
+
+/* Elements */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size 1rem;
+}
+
+header {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+img {
+    background-color: #F3F9FE;
+    padding: 0.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+p {
+    color: white;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem gray;
+    clear: both;
+    position: relative;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li span {
+    padding: 1rem;
+}
+
+li {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+li button {
+    text-align: start;
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+
+li button:hover {
+    color: var(--primary-color);
+}
+
+li button:focus {
+    margin-left: -0.5rem;
+    color: var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+}
+
+/* Classes */
+.add-branch {
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem gray;
+}
+
+.add-branch:hover {
+    background-color: var(--secondary-color);
+}
+
+.blue-square {
+    border-radius: 2rem;
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary-color);
+    background: linear-gradient(45deg, var(--tertiary-color), var(--primary-color));
+    transform: rotate(-10deg);
+    position: absolute;
+    top: -220px;
+    left: -20px;
+    z-index: -1;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.peronal-info {
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.close-button {
+    margin: 0;
+    padding: 0;
+    color: slategray;
+    font-size: 3rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+
+.close-button:hover {
+    color: black;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
